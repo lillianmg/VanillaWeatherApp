@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather app</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/4ca7fe6e62.js">
+    </script>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <header>Weather App</header>
+
+    <nav class="navbar" style="background-color: #ffffff;">
+        <form class="form-inline" id="search-form">
+            <input type="search" id="city-input" class="form-control mr-sm-2" placeholder="Enter city" autofocus="off"
+                autocomplete="off" />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Search">Search</button>
+            <button id="current-location-button">Current</button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="app container">
+            <div class="row">
+        </div>
+      </div>
+
+        <div class="row">
+            <div class="col">
+                <H2>Today in</H2>
+                <h1 id="city">
+                    Dallas, Texas
+                </h1>
+                <ul>
+                    <li id="date">Day Month</li>
+                </ul>
+              </div>
+            </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="col text-right">
+                    <li><span id="description">Very sunny</span></li>
+                    <li>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" id="icon" />
+                    <strong><span id="temperature"></span>
+                    <span class="units">
+                    <a href="#" id="celsius" class="active" >°C</a> |<a href="#" id="fahrenheit"> °F</a>
+                    </strong></span>
+                    </br>
+                </ul>
+            </div>
+          </div>
+        
+                  <div class="col-md-6">
+                <div class="float-right">
+                <div class="col text-left">
+                   <ul class="weather-details">
+                     <li>Humidity: <span id="humidity">20</span>%</li>
+                     <li>Wind: <span id="wind">3</span>mph</li>  
+                  </ul></div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+    <footer>
+        <small><a href="https://github.com/lillianmg/Plus6" target="_blank">Open-source code</a> by Lillian Gil</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="src/script.js"></script>
+
+</body>
+
+</html>

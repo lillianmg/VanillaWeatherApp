@@ -1,0 +1,70 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  background: none;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+header {
+  text-align: left;
+  font-size: 30px;
+  background: green;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+}
+
+li::first-letter {
+  text-transform: capitalize;
+}
+
+.container {
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  width: 55%;
+  background: rgb(127, 194, 73);
+  background: radial-gradient(
+    circle,
+    rgba(127, 194, 73, 1) 0%,
+    rgba(33, 141, 49, 0.9459238940884608) 100%
+  );
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(131, 226, 42);
+}
+
+button {
+  display: inline;
+  color: white;
+  background: green;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: white;
+  color: black;
+}
